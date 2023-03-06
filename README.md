@@ -2,5 +2,8 @@ Dette er vores færdige produkt. Der er uden tvivl mange sikkerhedssårbarheder,
 
 Du kan installere dette projekt og køre det lokalt ved at bruge disse kommandoer:
 ```shell
-git clone github.com/jeenyuhs/informatik-main
+$ git clone github.com/jeenyuhs/informatik-main
+$ npm i
+$ pip install flask
+$ python main.py
 ```
