@@ -274,6 +274,9 @@ def create_comment(review_id: int):
 
 @app.post("/like/<id>")
 def like_review(id: int):
+    if not session["session"]["logged_in"]:
+        return redirect(url_for(glob.last_visited_page, id=id))
+                        
     for r in all_reviews:
         if r["id"] == int(id):
             # if user sessions id is already found in the
